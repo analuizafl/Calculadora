@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Lemon&display=swap');
+
+* {
+    /* O * representa todos os elementos da página*/
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Lemon', serif;
+    font-size: 40px;
+    padding: 40px;
+    color: rgb(0, 0, 59);
+}
+
+/*Chamando a class fundo para estilizar*/
+.fundo {
+    /*Efeito degrader*/
+    background-image: linear-gradient(45deg, rgb(0, 58, 109), rgb(182, 224, 255));
+    height: 100vh;
+    /*tamanho vertical, Pra cor ocupar a tela toda*/
+    color: white;
+    /*Cor da letra*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    text-align: center;
+}
+
+/*Chamando a div calculadora*/
+.calculadora {
+    position: absolute;
+    /*Pra calculadora ocupa apenas o espaço dela mesma.*/
+    background-color: rgba(0, 0, 0, 0.6);
+    /*Colocando uma cor de fundo transparente na calculadora*/
+    /*-----Centralizando a calculadora ao meio-----*/
+    top: 50%;
+    /*Topo*/
+    left: 50%;
+    /*Espaçamento a esquerda*/
+    transform: translate(-50%, -50%);
+    /*Nesse caso vai voltar menos 50% no eixo Y e menos 50% no eixo X.*/
+    border-radius: 15px;
+    /*Arredondando as bordas*/
+    padding: 15px;
+    /*Colocando um padding entre os elementos e a borda de 15%*/
+}
+
+.botao {
+    width: 50px;
+    /*Largura*/
+    height: 50px;
+    /*Altura*/
+    font-size: 25px;
+    cursor: pointer;
+    /*Cursor Mãozinha*/
+    background-color: rgb(31, 31, 31);
+    /*Cor de fundo dos botões*/
+    border: none;
+    /*Sem bordas*/
+    color: #fff;
+    margin: 3px;
+    /*Colocando uam margem entre os botões, para ficarem mais organizados.*/
+    border-radius: 5px;
+}
+
+.botao:hover {
+    /*Quando o mouse passar por cima do botão, mudara de cor para preto*/
+    background-color: black;
+}
+
+#resultado {
+    background-color: white;
+    /*Cor de fundo*/
+    width: 213px;
+    /*Largura*/
+    height: 30px;
+    /*Altura*/
+    margin: 5px;
+    font-size: 25px;
+    /*Tamanho da fonte*/
+    color: black;
+    /*Cor da fonte*/
+    text-align: right;
+    padding: 5px;
+    /*Preenchimento*/
+    border-radius: 5px;
+}

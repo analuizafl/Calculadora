@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="fundo"> <!--Criando uma Div onde ficará todo o conteúdo-->
+        <H1> Ana Luiza </H1>
+
+        <!--Essa Div será toda a parte da calculadora-->
+        <div class="calculadora">
+            <h2>Calculadora</h2>
+            <p id="resultado"></p> <!--Onde o resultado das operações será exibido-->
+            <!--Criando uma tabela-->
+            <table>
+                <tr> <!--TR define uma linha numa tabela.-->
+                    <!--Colocando o "td" para criar uma coluna com um botão-->
+
+                    <!--Colocando a função onclick "delet", pra quando o botão "C" for clicado, ser
+                         deletado tudo o que está na parte do resultado.-->
+                    <td><button class="botao" onclick="delet()">C</button></td>
+
+                    <!--Colocando a função onclick "deletUm", pra quando o botão "<" for clicado, ele
+                         verá todos os caracteres que foi digitado e diminuirá um-->
+                    <td><button class="botao" onclick="deletUm()">
+                            < </button>
+                    </td>
+                    <!--O botão dos numerais e dos operadores matemáticos tem a função "onclick" chamada 
+                        Colocando(), pois quando esses botões forem cliclados, o número e o operador 
+                        será mostrado na parte do resultado.-->
+                    <td><button class="botao" onclick=" Colocando('/')">/</button></td>
+                    <td><button class="botao" onclick=" Colocando('*')">*</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="botao" onclick=" Colocando('7')">7</button></td>
+                    <td><button class="botao" onclick=" Colocando('8')">8</button></td>
+                    <td><button class="botao" onclick=" Colocando('9')">9</button></td>
+                    <td><button class="botao" onclick=" Colocando('-')">-</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="botao" onclick=" Colocando('4')">4</button></td>
+                    <td><button class="botao" onclick=" Colocando('5')">5</button></td>
+                    <td><button class="botao" onclick=" Colocando('6')">6</button></td>
+                    <td><button class="botao" onclick=" Colocando('+')">+</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="botao" onclick=" Colocando('1')">1</button></td>
+                    <td><button class="botao" onclick=" Colocando('2')">2</button></td>
+                    <td><button class="botao" onclick=" Colocando('3')">3</button></td>
+                    <td rowspan="2"><button class="botao" style="height: 106px;" onclick="Calcular()">=</button>
+                    </td>
+                    <!--Usando o rowspan para que o = ocupe 2 linhas-->
+                    <!--Usando o style para colocar a altura do botão = de 106px.-->
+                </tr>
+
+                <tr><!--Usando o colspan para expandir o 0 para duas colunas-->
+                    <td colspan="2"><button class="botao" style="width: 106px;" onclick=" Colocando('0')">0</button>
+                    </td>
+                    <!--Colocando o style para aumentar a largura do botão 0.-->
+                    <td><button class="botao" onclick=" Colocando('.')">.</button></td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
